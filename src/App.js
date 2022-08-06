@@ -1,12 +1,10 @@
 import React from 'react';
 import { Footer, Navbar } from './components';
-import Silder from './components/Silder';
 
 function App() {
   return (
-    <div className='container'>
+    <div className='w-5/6 container mx-auto'>
       <Navbar />
-      <Silder/>
       <Footer />
     </div>
   );
