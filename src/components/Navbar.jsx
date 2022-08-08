@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -9,11 +10,35 @@ const Navbar = () => {
 
       <div className='visible'>
         <ul className='flex gap-4 '>
-          <li className='text-lg uppercase font-medium hover:text-gray-400 cursor-pointer'>Home</li>
-          <li className='text-lg uppercase font-medium hover:text-gray-400 cursor-pointer'>Our Stuff</li>
-          <li className='text-lg uppercase font-medium hover:text-gray-400 cursor-pointer'>Practice Area</li>
-          <li className='text-lg uppercase font-medium hover:text-gray-400 cursor-pointer'>Testimonials</li>
-          <li className='text-lg uppercase font-medium hover:text-gray-400 cursor-pointer'>Contact</li>
+          <Link to='/'>
+            <li className='text-lg uppercase font-medium hover:text-gray-400 cursor-pointer'>
+              Home
+            </li>
+          </Link>
+
+          <Link to='/our-staff'>
+            <li className='text-lg uppercase font-medium hover:text-gray-400 cursor-pointer'>
+              Our Staff
+            </li>
+          </Link>
+
+          <Link to='/practice-area'>
+            <li className='text-lg uppercase font-medium hover:text-gray-400 cursor-pointer'>
+              Practice Area
+            </li>
+          </Link>
+
+          <Link to='/testimonials'>
+            <li className='text-lg uppercase font-medium hover:text-gray-400 cursor-pointer'>
+              Testimonials
+            </li>
+          </Link>
+
+          <Link to='/contact'>
+            <li className='text-lg uppercase font-medium hover:text-gray-400 cursor-pointer'>
+              Contact
+            </li>
+          </Link>
         </ul>
       </div>
     </nav>
