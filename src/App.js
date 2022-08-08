@@ -1,17 +1,29 @@
 import React from 'react';
 import { Footer, Navbar, FooterBanner } from './components';
-import { Home, OurStaff, NotFoundPage } from './pages';
+import {
+  Home,
+  OurStaff,
+  PracticeArea,
+  Testimonials,
+  Contact,
+  NotFoundPage,
+} from './pages';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className='w-5/6 container mx-auto'>
+    <div className='bg-gray-50'>
       <Navbar />
+      {/* Routes */}
       <Routes>
-        <Route exact path='/' element={<Home />} />
+        <Route exact={true} path='/' element={<Home />} />
         <Route path='/our-staff' element={<OurStaff />} />
+        <Route path='/practice-area' element={<PracticeArea />} />
+        <Route path='/testimonials' element={<Testimonials />} />
+        <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
+      {/* Footer */}
       <FooterBanner />
       <Footer />
     </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const FooterBanner = () => {
   return (
-    <div className=' w-full bg-yellow-600 flex py-10 justify-center gap-52 text-white'>
+    <div className='mt-5 w-full bg-yellow-600 flex flex-col sm:flex-row py-10 justify-center gap-52 text-white'>
       <div className='flex flex-col'>
         <div>
           <p>Cheshire Law Group</p>

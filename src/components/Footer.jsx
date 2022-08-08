@@ -3,7 +3,7 @@ import { FaFacebook, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <div className='bg-gray-500 flex justify-center gap-40 py-10 text-gray-300'>
+    <div className='bg-gray-500 flex flex-col sm:flex-row justify-center gap-40 py-10 text-gray-300'>
       <div className=''>
         <p className='text-lg font-medium'>Connect with us</p>
         <div className='inline-flex justify-center w-full gap-3'>

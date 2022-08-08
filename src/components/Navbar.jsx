@@ -1,14 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaBars } from 'react-icons/fa';
 
 const Navbar = () => {
+  const [state, setState] = React.useState(false);
+
+  const handleState = () => {
+    setState(!state);
+  };
+
   return (
-    <nav className='flex justify-center items-center gap-20'>
+    <nav className='flex justify-center items-center gap-20 sticky top-0 bg-white'>
       <div>
         <img src='/logo512.png' alt='' className='w-20' />
       </div>
 
-      <div className='visible'>
+      <button
+        type='button'
+        onClick={handleState}
+        className=' px-4 py-2 text-sm font-medium text-gray-900 hover:text-gray-500'
+      >
+        <FaBars />
+      </button>
+
+      <div className={''}>
         <ul className='flex gap-4 '>
           <Link to='/'>
             <li className='text-lg uppercase font-medium hover:text-gray-400 cursor-pointer'>
