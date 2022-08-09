@@ -19,13 +19,13 @@ const HeroSlider = ({ data, activeClass, descClass, imgClass }) => {
         return (
           <React.Fragment key={index}>
             {show && (
-              <div className={show ? ` ` : ''}>
+              <div className='w-full h-full'>
                 <img
                   src={data?.image}
                   alt={data?.alt}
                   className='w-full h-[50vh] object-cover relative'
                 />
-                <p className='z-50 absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-2xl text-black backdrop-blur-md hover:backdrop-blur-lg bg-yellow/100 "ease-out duration-300 p-20'>
+                <p className='z-50 absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-2xl text-black backdrop-blur-md hover:backdrop-blur-lg bg-yellow/100 "ease-out duration-300 px-2 py-1 uppercase font-medium text-center shadow-md rounded'>
                   {data?.desc}
                 </p>
               </div>

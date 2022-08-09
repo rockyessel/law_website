@@ -23,7 +23,7 @@ const Navbar = () => {
         <FaBars />
       </button>
 
-      <div className={''}>
+      <div className={'hidden'}>
         <ul className='flex gap-4 '>
           <Link to='/'>
             <li className='text-lg uppercase font-medium hover:text-gray-400 cursor-pointer'>

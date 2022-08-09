@@ -10,7 +10,7 @@ const WhatWeDo = () => {
         <h2 className='text-center font-medium text-[50px]'>What we do</h2>
       </div>
 
-      <ul className='flex justify-center gap-4 '>
+      <ul className='flex flex-col md:flex-row justify-center gap-8 '>
         <li className='inline-flex flex-col items-center'>
           <FaSuitcase className='text-[100px] border border-gray-400 rounded-full p-5 text-yellow-400' />
           <span className='font-medium text-lg'>General Counsel</span>

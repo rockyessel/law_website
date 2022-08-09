@@ -2,17 +2,17 @@ import React from 'react';
 
 const WhoWeAre = () => {
   return (
-    <div className='flex gap-4 justify-center items-center'>
+    <div className='flex flex-col md:flex-row gap-10 justify-center items-center'>
       <div className='flex flex-col gap-2'>
         <h1 className='text-[50px] font-bold'>Who we are</h1>
-        <p className='w-96 text-lg '>
+        <p className='w-full md:w-96 text-lg '>
           Cheshire Law Group is a sophisticated law office in a small shop,
           addressing everything from legal crises to our clients’ day-to-day
           needs. We take a holistic and pragmatic approach to providing legal
           counsel.
         </p>
 
-        <p className='w-96 text-lg '>
+        <p className='w-full md:w-96 text-lg '>
           We are a collaborative group, each of us driven by a passion to serve
           the nonprofit sector.
         </p>
