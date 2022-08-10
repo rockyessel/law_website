@@ -8,18 +8,18 @@ const HeroSlider = ({ data, activeClass, descClass, imgClass }) => {
   useEffect(() => {
     const autoSlider = setInterval(() => {
       setCurrentSlider(currentSlider === number ? 1 : currentSlider + 1);
-    }, 5000);
+    }, 8000);
     return () => clearInterval(autoSlider);
   }, [currentSlider, number]);
 
   return (
-    <section className='w-full h-[50vh]'>
+    <section className='w-full h-full'>
       {data?.map((data, index) => {
         const show = data?.id === currentSlider;
         return (
           <React.Fragment key={index}>
             {show && (
-              <div className='w-full h-full'>
+              <div className='w-full h-[50vh]'>
                 <img
                   src={data?.image}
                   alt={data?.alt}

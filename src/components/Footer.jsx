@@ -3,16 +3,16 @@ import { FaFacebook, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <div className='bg-gray-500 flex flex-col sm:flex-row justify-center gap-40 py-10 text-gray-300'>
-      <div className=''>
+    <div className='bg-gray-500 flex flex-col sm:flex-row justify-center gap-10 md:gap-40 py-10 text-gray-300'>
+      <div className='flex flex-col items-center'>
         <p className='text-lg font-medium'>Connect with us</p>
-        <div className='inline-flex justify-center w-full gap-3'>
+        <div className='flex gap-5'>
           <FaFacebook className='text-[35px] hover:text-yellow-500 cursor-pointer' />
           <FaTwitter className='text-[35px] hover:text-yellow-500 cursor-pointer' />
         </div>
       </div>
 
-      <div className=''>
+      <div className='flex flex-col items-center'>
         <p className='text-lg font-medium'>Subscribe to our newsletter:</p>
         <div className='inline-flex gap-4 items-center'>
           <input

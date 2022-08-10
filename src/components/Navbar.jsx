@@ -10,51 +10,76 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='flex justify-center items-center gap-20 sticky top-0 bg-white'>
-      <div>
-        <img src='/logo512.png' alt='' className='w-20' />
-      </div>
+    <nav class='bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900'>
+      <div class='container flex flex-wrap justify-between items-center mx-auto'>
+        <Link to='/' class='flex items-center'>
+          <img src='' class='mr-3 h-6 sm:h-9' alt='' />
+          <span class='self-center text-xl font-semibold whitespace-nowrap dark:text-white'>
+            TheLawed
+          </span>
+        </Link>
 
-      <button
-        type='button'
-        onClick={handleState}
-        className=' px-4 py-2 text-sm font-medium text-gray-900 hover:text-gray-500'
-      >
-        <FaBars />
-      </button>
+        <button
+          onClick={handleState}
+          data-collapse-toggle='navbar-default'
+          type='button'
+          class='inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
+          aria-controls='navbar-default'
+          aria-expanded='false'
+        >
+          <span class='sr-only'>Open main menu</span>
+          <FaBars />
+        </button>
 
-      <div className={'hidden'}>
-        <ul className='flex gap-4 '>
-          <Link to='/'>
-            <li className='text-lg uppercase font-medium hover:text-gray-400 cursor-pointer'>
-              Home
+        <div class={` w-full md:w-auto ${state ? 'block' : 'hidden'}`}>
+          <ul class='flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'>
+            <li>
+              <Link
+                to='/home'
+                class='block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white'
+                aria-current='page'
+              >
+                Home
+              </Link>
             </li>
-          </Link>
 
-          <Link to='/our-staff'>
-            <li className='text-lg uppercase font-medium hover:text-gray-400 cursor-pointer'>
-              Our Staff
+            <li>
+              <Link
+                to='/our-staff'
+                class='block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+              >
+                Our Staff
+              </Link>
             </li>
-          </Link>
 
-          <Link to='/practice-area'>
-            <li className='text-lg uppercase font-medium hover:text-gray-400 cursor-pointer'>
-              Practice Area
+            <li>
+              <Link
+                to='/practice-area'
+                class='block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+              >
+                Practice Area
+              </Link>
             </li>
-          </Link>
 
-          <Link to='/testimonials'>
-            <li className='text-lg uppercase font-medium hover:text-gray-400 cursor-pointer'>
-              Testimonials
+            <li>
+              <Link
+                to='/testimonials'
+                class='block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+              >
+                Testimonials
+              </Link>
             </li>
-          </Link>
 
-          <Link to='/contact'>
-            <li className='text-lg uppercase font-medium hover:text-gray-400 cursor-pointer'>
-              Contact
+            <li>
+              <Link
+                to='/contact'
+                class='block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+              >
+                Contact
+              </Link>
             </li>
-          </Link>
-        </ul>
+          </ul>
+        </div>
       </div>
     </nav>
   );

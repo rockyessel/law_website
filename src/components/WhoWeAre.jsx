@@ -2,8 +2,8 @@ import React from 'react';
 
 const WhoWeAre = () => {
   return (
-    <div className='flex flex-col md:flex-row gap-10 justify-center items-center'>
-      <div className='flex flex-col gap-2'>
+    <div className='flex flex-col md:flex-row gap-10 justify-center items-center w-full md:h-[75vh] bg-blue-200 p-5'>
+      <div className='flex flex-col justify-center gap-2'>
         <h1 className='text-[50px] font-bold'>Who we are</h1>
         <p className='w-full md:w-96 text-lg '>
           Cheshire Law Group is a sophisticated law office in a small shop,
@@ -25,7 +25,7 @@ const WhoWeAre = () => {
         </button>
       </div>
 
-      <div className='flex items-center gap-4'>
+      <div className='flex justify-start md:items-center gap-4'>
         <div>
           <img
             src='/logo512.png'

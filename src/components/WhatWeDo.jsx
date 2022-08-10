@@ -5,7 +5,7 @@ import { GiShakingHands, GiOlive } from 'react-icons/gi';
 
 const WhatWeDo = () => {
   return (
-    <div className='flex flex-col gap-4'>
+    <div className='flex flex-col items-center justify-center md:h-[75vh] gap-4 bg-gray-600 text-white py-5'>
       <div>
         <h2 className='text-center font-medium text-[50px]'>What we do</h2>
       </div>
