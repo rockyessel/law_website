@@ -6,10 +6,10 @@ const WhoWeAre = () => {
       <div className='flex flex-col justify-center gap-2'>
         <h1 className='text-[50px] font-bold'>Who we are</h1>
         <p className='w-full md:w-96 text-lg '>
-          Cheshire Law Group is a sophisticated law office in a small shop,
-          addressing everything from legal crises to our clients’ day-to-day
-          needs. We take a holistic and pragmatic approach to providing legal
-          counsel.
+          Greenberg&Hastings Associates is a sophisticated law office in a small
+          shop, addressing everything from legal crises to our clients’
+          day-to-day needs. We take a holistic and pragmatic approach to
+          providing legal counsel.
         </p>
 
         <p className='w-full md:w-96 text-lg '>
@@ -28,14 +28,14 @@ const WhoWeAre = () => {
       <div className='flex justify-start md:items-center gap-4'>
         <div>
           <img
-            src='/logo512.png'
+            src='/Michael.jpeg'
             alt=''
             className='w-40 bg-yellow-400 rounded-full'
           />
         </div>
         <div>
           <h3 className='font-bold text-yellow-600 hover:text-gray-400'>
-            Eoin Carrick
+            Michael Daniel
           </h3>
           <p className='w-48 text-lg '>
             "It's so gratifying to help an organization reach that point where
