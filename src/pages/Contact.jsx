@@ -63,7 +63,7 @@ const Contact = () => {
                     name='user_name'
                     id='fullname'
                     className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 outline-none '
-                    placeholder='john.doe@company.com'
+                    placeholder='eg. John Deo'
                     required
                   />
                 </div>
@@ -76,7 +76,20 @@ const Contact = () => {
                     id='email'
                     name='user-email'
                     className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 outline-none '
-                    placeholder='john.doe@company.com'
+                    placeholder='eg. john.doe@company.com'
+                    required
+                  />
+                </div>
+                <div className='mb-6'>
+                  <label className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'>
+                    Title Area
+                  </label>
+                  <input
+                    type='text'
+                    name='user_title'
+                    id='fullname'
+                    className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 outline-none '
+                    placeholder='eg. Family law'
                     required
                   />
                 </div>
