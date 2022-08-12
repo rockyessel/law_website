@@ -1,16 +1,18 @@
 import React from 'react';
 import { HeroSlider } from '../components';
-import { HeroSliderDataOurStaff } from '../services/index';
+import { HeroSliderDataOurStaff as data } from '../services/index';
 
 const OurStaff = () => {
   return (
     <React.Fragment>
-      <HeroSlider data={HeroSliderDataOurStaff} />
+      <HeroSlider data={data} />
+      <div className='w-full bg-blue-600 py-10'>
+        <h3 className='text-center text-2xl font-bold text-white uppercase'>
+          Compassionate, Experienced, Representation
+        </h3>
+      </div>
       <div className='flex flex-col gap-4'>
         <section className='flex flex-col gap-4 text-center self-center'>
-          <h3 className='text-2xl text-center font-bold'>
-            Compassionate, Experienced, Representation
-          </h3>
           <div className='flex flex-col gap-2 w-full md:w-[40rem] justify-center'>
             <p>
               Our attorneys are for honesty, integrity, and compassion. Your

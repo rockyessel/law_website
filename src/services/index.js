@@ -63,6 +63,27 @@ export const HeroSliderDataOurStaff = [
   },
 ];
 
+export const HeroSliderDataPractice = [
+  {
+    id: 1,
+    image: '/p1.jpg',
+    alt: 'image1',
+    desc: "People often only see one side to someone's personality, but there are levels.",
+  },
+  {
+    id: 2,
+    image: '/p2.jpg',
+    alt: 'image2',
+    desc: 'Personality is an unbroken series of successful gestures.',
+  },
+  {
+    id: 3,
+    image: '/p3.jpg',
+    alt: 'image3',
+    desc: 'I believe in doing the right things; that is my character and personality.',
+  },
+];
+
 export const Data = [
   {
     id: 1,

@@ -5,11 +5,20 @@ const WhoWeAre = () => {
     <div className='flex flex-col md:flex-row gap-10 justify-center items-center w-full md:h-[75vh] bg-blue-200 p-5'>
       <div className='flex flex-col justify-center gap-2'>
         <h1 className='text-[50px] font-bold'>Who we are</h1>
-        <p className='w-full md:w-96 text-lg '>
-          Greenberg&Hastings Associates is a sophisticated law office in a small
-          shop, addressing everything from legal crises to our clients’
-          day-to-day needs. We take a holistic and pragmatic approach to
-          providing legal counsel.
+        <p className='w-full md:w-[40rem] text-lg '>
+          We are a modern and dynamic law firm in Uk/USA with our 25 legal teams
+          across the world. Our areas of focus include corporate and commercial
+          law, property and construction law, energy and infrastructure law,
+          banking and finance, and dispute resolution. Our team of creative and
+          leading lawyers has excellent local and international experience in
+          law and business. We combine this knowledge and experience with a
+          collaborative approach to all our assignments to provide
+          comprehensive, concise and commercial advice. We strive to stay
+          abreast of innovations in business as well as local and global
+          political and economic developments and to understand and take into
+          consideration their impact on our clients’ businesses in formulating
+          our advice. With this, we’ve earned the reputation as one of the best
+          law firms across the world.
         </p>
 
         <p className='w-full md:w-96 text-lg '>
@@ -19,7 +28,7 @@ const WhoWeAre = () => {
 
         <button
           type='button'
-          className=' text-lg border w-40 border-gray-500 px-2 py-1 uppercase hover:rounded  hover:bg-yellow-400 hover:text-white hover:border-yellow-400 hover:border'
+          className=' text-lg border w-40 border-gray-500 px-2 py-1 uppercase hover:rounded font-medium  hover:bg-blue-600 hover:text-white hover:border-blue-600 hover:border'
         >
           Meet our team
         </button>
@@ -30,12 +39,12 @@ const WhoWeAre = () => {
           <img
             src='/Michael.jpeg'
             alt=''
-            className='w-40 bg-yellow-400 rounded-full'
+            className='w-40 bg-blue-600 rounded-full'
           />
         </div>
         <div>
-          <h3 className='font-bold text-yellow-600 hover:text-gray-400'>
-            Michael Daniel
+          <h3 className='font-bold text-blue-600 hover:text-gray-400'>
+            Michael Greenberg
           </h3>
           <p className='w-48 text-lg '>
             "It's so gratifying to help an organization reach that point where
