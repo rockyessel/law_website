@@ -46,7 +46,7 @@ const Contact = () => {
                 attention is important.
               </p>
               <img
-                src='https://roachjustice.com/wp-content/uploads/2017/06/Contact-an-Attorney.png'
+                src='/house.jpg'
                 className='w-full md:w-1/2 shadow-md rounded self-center'
                 alt=''
               />
